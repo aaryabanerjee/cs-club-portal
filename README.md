@@ -24,7 +24,7 @@ This README is a complete guide to the project, covering everything from setup i
 
 ## 📸 Screenshots
 
-*Coming soon! Add some screenshots of the app in action to show off the Matrix vibe.*
+*Coming soon!*
 
 ## 🚀 Getting Started
 
