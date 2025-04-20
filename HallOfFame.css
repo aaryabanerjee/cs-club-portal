@@ -1,0 +1,159 @@
+/* matrix container */
+.matrix-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+  }
+  
+  /* content container for hall of fame */
+  .matrix-content {
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border: 2px solid #0F0;
+    box-shadow: 0 0 20px #0F0;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 800px;
+    width: 100%;
+    margin: 60px 0;
+  }
+  
+  /* header */
+  .matrix-header {
+    color: #0F0;
+    font-size: 36px;
+    text-shadow: 0 0 10px #0F0;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* HOF list */
+  .hall-of-fame-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  /* HOF entry */
+  .hall-of-fame-entry {
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid #0F0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0F0;
+  }
+  
+  /* Frame with royal stylingg */
+  .portrait-frame {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    background: linear-gradient(
+      45deg,
+      #FFD700 0%, /* royal effect */
+      #DAA520 50%,
+      #FFD700 100%
+    );
+    border: 5px solid #FFD700;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0F0, /* matrix green glow */
+                0 0 30px rgba(0, 255, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  /* decorative corners */
+  .portrait-frame::before,
+  .portrait-frame::after,
+  .portrait-frame > .corner::before,
+  .portrait-frame > .corner::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #FFD700;
+    border: 2px solid #0F0;
+    box-shadow: 0 0 10px #0F0;
+  }
+  
+  .portrait-frame::before {
+    top: -5px;
+    left: -5px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .portrait-frame::after {
+    top: -5px;
+    right: -5px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .portrait-frame > .corner::before {
+    bottom: -5px;
+    left: -5px;
+    border-top-right-radius: 10px;
+  }
+  
+  .portrait-frame > .corner::after {
+    bottom: -5px;
+    right: -5px;
+    border-top-left-radius: 10px;
+  }
+  
+  /* portrait_image */
+  .portrait-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #0F0;
+    border-radius: 5px;
+  }
+  
+  /* name */
+  .entry-name {
+    color: #0F0;
+    font-size: 24px;
+    text-shadow: 0 0 5px #0F0;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* position */
+  .entry-position {
+    color: #00cc00;
+    font-size: 18px;
+    text-shadow: 0 0 3px #00cc00;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* experience */
+  .entry-experience {
+    color: #00cc00;
+    font-size: 16px;
+    text-shadow: 0 0 3px #00cc00;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* back link */
+  .back-link {
+    display: inline-block;
+    color: #0F0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    text-shadow: 0 0 5px #0F0;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .back-link:hover {
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+  }

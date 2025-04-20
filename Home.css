@@ -1,0 +1,76 @@
+/* General page layout */
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Container for the Matrix effect and content */
+  .matrix-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Canvas for the digital rain effect */
+  .matrix-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  }
+  
+  /* Content container */
+  .matrix-content {
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border: 2px solid #0F0;
+    box-shadow: 0 0 20px #0F0;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 60px; /* Add margin to account for navbar height */
+  }
+  
+  /* Header text */
+  .matrix-header {
+    color: #0F0;
+    font-size: 36px;
+    text-shadow: 0 0 10px #0F0;
+    margin-bottom: 30px;
+  }
+  
+  /* Buttons container */
+  .matrix-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Matrix-style buttons */
+  .matrix-button {
+    background: none;
+    border: 2px solid #0F0;
+    color: #0F0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px #0F0;
+  }
+  
+  .matrix-button:hover {
+    background-color: #0F0;
+    color: #000;
+    box-shadow: 0 0 15px #0F0;
+    text-shadow: none;
+  }

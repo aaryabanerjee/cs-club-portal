@@ -1,0 +1,101 @@
+/* Matrix container */
+.matrix-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+  }
+  
+  /* Content container for submit project */
+  .matrix-content {
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border: 2px solid #0F0;
+    box-shadow: 0 0 20px #0F0;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 100%;
+    margin: 60px 0;
+  }
+  
+  /* Header */
+  .matrix-header {
+    color: #0F0;
+    font-size: 36px;
+    text-shadow: 0 0 10px #0F0;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Success and error messages */
+  .success-message {
+    color: #0F0;
+    font-size: 16px;
+    text-shadow: 0 0 5px #0F0;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .error-message {
+    color: #ff3333;
+    font-size: 16px;
+    text-shadow: 0 0 5px #ff3333;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Form */
+  .submit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Input fields */
+  .matrix-input,
+  .matrix-textarea {
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid #0F0;
+    color: #0F0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .matrix-input:focus,
+  .matrix-textarea:focus {
+    box-shadow: 0 0 10px #0F0;
+  }
+  
+  /* Textarea specific styles */
+  .matrix-textarea {
+    resize: none;
+  }
+  
+  /* Submit button */
+  .matrix-button {
+    background: none;
+    border: 2px solid #0F0;
+    color: #0F0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px #0F0;
+  }
+  
+  .matrix-button:hover {
+    background-color: #0F0;
+    color: #000;
+    box-shadow: 0 0 15px #0F0;
+    text-shadow: none;
+  }
